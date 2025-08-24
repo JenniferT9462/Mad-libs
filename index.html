@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mad Libs!</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container bg-info">
+      <div class="h1 text-center text-white mt-3">Mad Libs!</div>
+      <div class="p text-center text-white">Learning to drive</div>
+      <div class="row mt-3 g-1">
+        <!-- Plural Noun input -->
+        <div>
+          <label for="pluralNoun">Plural Noun: </label>
+          <input
+            type="text"
+            id="pNounOutput"
+            class="form-control rounded-0 mt-3"
+            placeholder="Plural Noun"
+          />
+        </div>
+
+        <!-- Noun 1 -->
+        <div>
+          <label for="noun1">Noun</label>
+          <input
+            type="text"
+            id="nOutput1"
+            class="form-control rounded-0 mt-3"
+            placeholder="Noun"
+          />
+        </div>
+
+        <!-- Noun2 -->
+        <div>
+          <label for="noun2">Noun: </label>
+          <input
+            type="text"
+            id="nOutput2"
+            class="form-control rounded-0 mt-3"
+            placeholder="Noun"
+          />
+        </div>
+        <!-- Song -->
+         <div>
+            <label for="song">Song: </label>
+            <input
+            type="text"
+            id="songOutput"
+            class="form-control rounded-0 mt-3"
+            placeholder="Song"
+          />
+         </div>
+      
+          <!-- Verb -->
+         <div>
+            <label for="verb">Verb: </label>
+             <input
+            type="text"
+            id="verbOutput"
+            class="form-control rounded-0 mt-3"
+            placeholder="Verb"
+          />
+         </div>
+
+        </div>
+      </div>
+      <a id="nextBtn" href="screen2.html" class="btn btn-danger rounded-0 mt-3"
+        >Next</a
+      >
+    </div>
+    <script src="helpers.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
