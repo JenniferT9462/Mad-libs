@@ -9,18 +9,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="helpers.js"></script>
   </head>
   <body>
     <div class="container bg-info">
       <div class="h1 text-center text-white mt-3">Mad Libs!</div>
       <div class="p text-center text-white">Learning to drive</div>
-      <div class="row mt-3 g-1">
+      
+      <form class="row mt-3 g-1">
         <!-- Plural Noun input -->
         <div>
-          <label for="pluralNoun">Plural Noun: </label>
+          <label for="pNounInput">Plural Noun: </label>
           <input
             type="text"
-            id="pNounOutput"
+            id="pNounInput"
             class="form-control rounded-0 mt-3"
             placeholder="Plural Noun"
           />
@@ -31,7 +33,7 @@
           <label for="noun1">Noun</label>
           <input
             type="text"
-            id="nOutput1"
+            id="nounInput1"
             class="form-control rounded-0 mt-3"
             placeholder="Noun"
           />
@@ -42,7 +44,7 @@
           <label for="noun2">Noun: </label>
           <input
             type="text"
-            id="nOutput2"
+            id="nounInput2"
             class="form-control rounded-0 mt-3"
             placeholder="Noun"
           />
@@ -52,7 +54,7 @@
             <label for="song">Song: </label>
             <input
             type="text"
-            id="songOutput"
+            id="songInput"
             class="form-control rounded-0 mt-3"
             placeholder="Song"
           />
@@ -63,19 +65,22 @@
             <label for="verb">Verb: </label>
              <input
             type="text"
-            id="verbOutput"
+            id="verbInput"
             class="form-control rounded-0 mt-3"
             placeholder="Verb"
           />
          </div>
-
-        </div>
-      </div>
-      <a id="nextBtn" href="screen2.html" class="btn btn-danger rounded-0 mt-3"
+         
+         <a id="nextBtn" href="screen2.html" class="btn btn-danger rounded-0 mt-3" onclick="clickNext()"
         >Next</a
       >
+        </form>
+      </div>
+      
     </div>
-    <script src="helpers.js"></script>
+    
     <script src="index.js"></script>
+    
+    
   </body>
 </html>

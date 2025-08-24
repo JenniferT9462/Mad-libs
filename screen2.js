@@ -1,9 +1,19 @@
+window.onload = function() {
+  // Get Madlib from localstorage
+  var madLib = localStorage.getItem("madLibStory");
 
-onEvent("startOver", "click",function(){     
-  setScreen("collectUserInput");
-  setText("pNounOutput","");
-  setText("nOutput1","");
-  setText("nOutput2","");
-  setText("songOutput","");
-  setText("verbOutput","");
-});
+  if (madLib) {
+    document.getElementById("displayOutput").value = madLib;
+  }
+}
+
+
+function clickPlay() {
+  console.log("Play Button Clicked!");
+  
+  // Clear from local storage
+  localStorage.removeItem("madLibStory");
+
+  //Go back to index.html
+  window.location.href = "index.html";
+}
