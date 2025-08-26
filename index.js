@@ -58,4 +58,5 @@ onEvent("nextBtn", "click", function () {
   setText("displayOutput", madLib);
   document.getElementById("madLibInputs").classList.add("d-none");
   document.getElementById("madLibOutput").classList.remove("d-none");
+  
 });
