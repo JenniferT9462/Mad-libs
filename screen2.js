@@ -1,9 +1,10 @@
 window.onload = function() {
   // Get Madlib from localstorage
   var madLib = localStorage.getItem("madLibStory");
+  console.log(madLib);
 
   if (madLib) {
-    document.getElementById("displayOutput").value = madLib;
+    document.getElementById("displayOutput").textContent = madLib;
   }
 }
 
