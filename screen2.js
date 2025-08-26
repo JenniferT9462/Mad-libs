@@ -1,3 +1,19 @@
+//=====Code.org code=====
+
+onEvent("playBtn", "click", function () {
+  // setScreen("screen1");
+  setText("pNounInput", "");
+  setText("nounInput1", "");
+  setText("nounInput2", "");
+  setText("songInput", "");
+  setText("verbInput", "");
+  document.getElementById("madLibInputs").classList.remove("d-none");
+  document.getElementById("madLibOutput").classList.add("d-none");
+  
+});
+
+// ======JavaScript=====
+
 // window.onload = function() {
 //   // Get Madlib from localstorage
 //   var madLib = localStorage.getItem("madLibStory");
@@ -20,16 +36,3 @@
 
 
 
-// Code.org code...
-
-onEvent("playBtn", "click", function () {
-  // setScreen("screen1");
-  setText("pNounInput", "");
-  setText("nounInput1", "");
-  setText("nounInput2", "");
-  setText("songInput", "");
-  setText("verbInput", "");
-   document.getElementById("madLibInputs").classList.remove("d-none");
-  document.getElementById("madLibOutput").classList.add("d-none");
-  
-});
