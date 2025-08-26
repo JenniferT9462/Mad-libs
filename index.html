@@ -12,7 +12,7 @@
     
   </head>
   <body>
-    <div class="container bg-info">
+    <div class="container bg-info" id="madLibInputs">
       <div class="h1 text-center text-white mt-3">Mad Libs!</div>
       <div class="p text-center text-white">Learning to drive</div>
       
@@ -73,13 +73,28 @@
          
          
       
-        <!-- </form> -->
-        <a id="nextBtn" href="screen2.html" class="btn btn-danger rounded-0 mt-3"  onClick="clickNext()"
-        >Next</a>
+      
+        <a id="nextBtn" class="btn btn-danger rounded-0 mt-3"  type="button">Next</a>
       </div>
       
     </div>
+    
 
+    <div class="container-fluid d-none" id="madLibOutput">
+      <div class="card p-4 bg-secondary text-white w-75 m-auto ">
+        <textarea
+          name="displayOutput"
+          id="displayOutput"
+          class="form-control bg-dark text-white h-100 border-0"
+          rows="20"
+        ></textarea>
+    </div>
+
+
+      <a id="playBtn" href="index.html" class="btn btn-danger rounded-0 mt-3 d-none" type="button"
+        >Play Again</a
+      >
+    </div>
 
     <script src="helpers.js"></script>
     <script src="index.js"></script>
