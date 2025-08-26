@@ -33,11 +33,11 @@ function clickNext() {
 
 // onEvent("nextBtn", "click", function(){
 //   // setScreen("screen2");
-//   var pluralNoun = getText("pNounInput");
-//   var noun1 = getText("nounInput1");
-//   var noun2 = getText("nounInput2");
-//   var song = getText("songInput");
-//   var verb = getText("verbInput");
+//   var pluralNoun = getValue("pNounInput");
+//   var noun1 = getValue("nounInput1");
+//   var noun2 = getValue("nounInput2");
+//   var song = getValue("songInput");
+//   var verb = getValue("verbInput");
 
 //   var madLib = "Learning to drive is a tricky process. There " +
 //              "are a few rules you must follow.\n\n" +
