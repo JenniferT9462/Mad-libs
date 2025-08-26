@@ -14,7 +14,7 @@ function clickPlay() {
   localStorage.removeItem("madLibStory");
 
   //Go back to index.html
-  window.location.href = "index.html";
+  window.location.href = "./index.html";
 }
 
 
