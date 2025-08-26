@@ -7,13 +7,25 @@ window.onload = function() {
   }
 }
 
-
 function clickPlay() {
   console.log("Play Button Clicked!");
-  
+
   // Clear from local storage
   localStorage.removeItem("madLibStory");
 
   //Go back to index.html
   window.location.href = "index.html";
 }
+
+
+
+// Code.org code...
+
+// onEvent("playBtn", "click", function () {
+//   // setScreen("screen1");
+//   setText("pNounInput", "");
+//   setText("nounInput1", "");
+//   setText("nounInput2", "");
+//   setText("songInput", "");
+//   setText("verbInput", "");
+// });
