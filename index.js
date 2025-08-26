@@ -1,4 +1,5 @@
 //=====Code.org code======
+// Lesson on code.org...https://studio.code.org/courses/csp5-virtual/units/1/lessons/7/levels/8
 
 onEvent("nextBtn", "click", function () {
   var pluralNoun = getValue("pNounInput");
