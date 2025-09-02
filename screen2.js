@@ -3,10 +3,10 @@
 const playBtn = document.getElementById("playBtn");
 playBtn.addEventListener("click", () => {
   pluralNoun.textContent = "";
-  noun1.textContent = "";
-  noun2.textContent = "";
-  song.textContent = "";
-  verb.textContent = "";
+  noun1.value = "";
+  noun2.value = "";
+  song.value = "";
+  verb.value = "";
 
   document.getElementById("madLibInputs").classList.remove("d-none");
   document.getElementById("madLibOutput").classList.add("d-none");

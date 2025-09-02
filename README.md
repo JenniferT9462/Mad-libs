@@ -142,6 +142,68 @@ Learning to drive is a tricky process. There are a few rules you must follow.
 
 ---
 
+## Refactoring
+
+Refactoring the Mad Libs app from Code.org to standard JavaScript involves updating the syntax for event handling, getting and setting element values, and managing the display. The core logic of creating the Mad Lib string remains the same, but the methods for interacting with the web page change.
+
+### 1. Update Event Listeners
+Code.org's `onEvent` function is a simplified way to attach event handlers. In standard JavaScript, you use the addEventListener method on an element. You first get a reference to the element and then call addEventListener on it.
+
+- Code.org: `onEvent("nextBtn", "click", function () { ... });`
+
+- JavaScript:
+  ```js
+  const nextBtn = document.getElementById("nextBtn");
+    nextBtn.addEventListener("click", () => {
+      //...
+  });
+  ```
+You'll do the same for the "playBtn" to reset the game. This approach is more flexible and is the standard for modern web development.
+
+### 2. Get Input Values
+
+Code.org's `getValue()` function simplifies getting the text from an input field. In standard JavaScript, you must first get the element using document.getElementById() and then access its value property.
+
+- Code.org: `var pluralNoun = getValue("pNounInput");`
+
+- JavaScript: `const pluralNoun = document.getElementById("pNounInput").value;`
+
+This change is applied to all input fields (pNounInput, nounInput1, nounInput2, etc.).
+
+### 3. Update Text Content
+
+Similarly, Code.org's `setText()` is a convenience function for updating an element's text. In standard JavaScript, you get a reference to the element and then set its textContent or innerText property. textContent is generally preferred as it's more performant and less prone to unexpected behavior.
+
+- Code.org: `setText("displayOutput", madLib);`
+
+- JavaScript: 
+  ```js
+  const displayOutput = document.getElementById("displayOutput"); 
+  displayOutput.textContent = madLib;
+  ```
+
+For clearing the input fields, you'd set the value property to an empty string ('') rather than textContent. 
+
+- Corrected JavaScript:
+  ```js
+  const playBtn = document.getElementById("playBtn");
+  playBtn.addEventListener("click", () => {
+    document.getElementById("pNounInput").value = "";
+    document.getElementById("nounInput1").value = "";
+    // ... and so on for the other inputs
+    });
+  ```
+### 4. Manage Element Visibility
+
+Both the Code.org and standard JavaScript versions use the classList property to manage the visibility of elements by adding or removing CSS classes. This is a common and effective technique that remains consistent between the two versions. The syntax for this part of the code is the same.
+
+- `document.getElementById("madLibInputs").classList.add("d-none");`
+
+- `document.getElementById("madLibOutput").classList.remove("d-none");`
+
+The d-none class is likely a utility class (like those found in frameworks like Bootstrap) that sets display: none;, effectively hiding the element.
+
+
 ## 🙌 Credits
 
 - Built as part of Code.org CSP curriculum
