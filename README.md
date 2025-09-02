@@ -155,7 +155,7 @@ Code.org's `onEvent` function is a simplified way to attach event handlers. In s
   ```js
   const nextBtn = document.getElementById("nextBtn");
     nextBtn.addEventListener("click", () => {
-      //...
+      //...input values, madLib, madLib output, display...
   });
   ```
 You'll do the same for the "playBtn" to reset the game. This approach is more flexible and is the standard for modern web development.
@@ -184,7 +184,7 @@ Similarly, Code.org's `setText()` is a convenience function for updating an elem
 
 For clearing the input fields, you'd set the value property to an empty string ('') rather than textContent. 
 
-- Corrected JavaScript:
+- JavaScript:
   ```js
   const playBtn = document.getElementById("playBtn");
   playBtn.addEventListener("click", () => {
