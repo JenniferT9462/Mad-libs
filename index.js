@@ -28,10 +28,14 @@ nextBtn.addEventListener("click", () => {
 
   console.log(madLib);
 
+  // Find the element with the ID "displayOutput" and set its text content 
+  // to the value stored in the variable madLib (shows the completed story).
   const displayOutput = document.getElementById("displayOutput");
   displayOutput.textContent = madLib;
 
+  // Add "d-none" class to the MadLib inputs, which prevents from displaying
   document.getElementById("madLibInputs").classList.add("d-none");
+  // Removes the "d-none" class and makes the madLibOutput visible
   document.getElementById("madLibOutput").classList.remove("d-none");
 });
 
