@@ -1,16 +1,30 @@
-//=====Code.org code=====
+//====== Refactoring ======
 
-onEvent("playBtn", "click", function () {
-  // setScreen("screen1");
-  setText("pNounInput", "");
-  setText("nounInput1", "");
-  setText("nounInput2", "");
-  setText("songInput", "");
-  setText("verbInput", "");
+const playBtn = document.getElementById("playBtn");
+playBtn.addEventListener("click", () => {
+  pluralNoun.textContent = "";
+  noun1.textContent = "";
+  noun2.textContent = "";
+  song.textContent = "";
+  verb.textContent = "";
+
   document.getElementById("madLibInputs").classList.remove("d-none");
   document.getElementById("madLibOutput").classList.add("d-none");
-  
 });
+
+//=====Code.org code=====
+
+// onEvent("playBtn", "click", function () {
+//   // setScreen("screen1");
+//   setText("pNounInput", "");
+//   setText("nounInput1", "");
+//   setText("nounInput2", "");
+//   setText("songInput", "");
+//   setText("verbInput", "");
+
+//   document.getElementById("madLibInputs").classList.remove("d-none");
+//   document.getElementById("madLibOutput").classList.add("d-none");
+// });
 
 // ======JavaScript=====
 
@@ -33,6 +47,3 @@ onEvent("playBtn", "click", function () {
 //   //Go back to index.html
 //   window.location.href = "./index.html";
 // }
-
-
-
