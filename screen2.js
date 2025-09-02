@@ -8,7 +8,11 @@ playBtn.addEventListener("click", () => {
   song.value = "";
   verb.value = "";
 
+
+  // Show the MadLib input section again by removing the "d-none" class
   document.getElementById("madLibInputs").classList.remove("d-none");
+
+  // Hide the MadLib output section again by adding the "d-none" class
   document.getElementById("madLibOutput").classList.add("d-none");
 });
 

@@ -28,17 +28,17 @@ nextBtn.addEventListener("click", () => {
 
   console.log(madLib);
 
-  // Find the element with the ID "displayOutput" and set its text content 
+  // Find the element with the ID "displayOutput" and set its text content
   // to the value stored in the variable madLib (shows the completed story).
   const displayOutput = document.getElementById("displayOutput");
   displayOutput.textContent = madLib;
 
-  // Add "d-none" class to the MadLib inputs, which prevents from displaying
+  // Hide the MadLib input section by adding the "d-none" class (Bootstrap utility for display: none)
   document.getElementById("madLibInputs").classList.add("d-none");
-  // Removes the "d-none" class and makes the madLibOutput visible
+
+  // Show the MadLib output section by removing the "d-none" class
   document.getElementById("madLibOutput").classList.remove("d-none");
 });
-
 
 //=====Code.org code======
 // Lesson on code.org...https://studio.code.org/courses/csp5-virtual/units/1/lessons/7/levels/8
@@ -74,8 +74,6 @@ nextBtn.addEventListener("click", () => {
 //   document.getElementById("madLibInputs").classList.add("d-none");
 //   document.getElementById("madLibOutput").classList.remove("d-none");
 // });
-
-
 
 //======JavaScript======
 
