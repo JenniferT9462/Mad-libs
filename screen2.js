@@ -2,7 +2,7 @@
 
 const playBtn = document.getElementById("playBtn");
 playBtn.addEventListener("click", () => {
-  pluralNoun.textContent = "";
+  pluralNoun.value = "";
   noun1.value = "";
   noun2.value = "";
   song.value = "";
